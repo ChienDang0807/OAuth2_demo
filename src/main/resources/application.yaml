@@ -1,0 +1,21 @@
+server:
+  port: 8081
+  servlet:
+      context-path: /identity
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: booktest
+    password: abcd1234
+  jpa:
+    properties:
+      hibernate:
+        
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  signerKey: "hlPp9x4GIOQVHBewHlAtg2PJtw98OFrY0IOmYv4EC9zpmU5sUcqBtP2rW+gsJ2vX"
+  valid-duration: 3600 #in second #het han sau
+  refreshable-duration: 7200 #second #token moi co thoi han
